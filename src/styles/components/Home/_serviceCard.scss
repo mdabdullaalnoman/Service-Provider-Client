@@ -1,0 +1,11 @@
+.service_card {
+  .card-item{
+    border-bottom: 1px solid #e2dddd;
+  }
+  .linkTab {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
