@@ -2,15 +2,15 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Link } from "react-router-dom";
-import plumbing from "../../../assets/images/tc-21-600w.avif";
-import window from "../../../assets/images/tc-22-600w.avif";
-import door from "../../../assets/images/tc-25-600w.avif";
-const ServiceCard = () => {
+import plumbing from "../../../assets/images/tc-18-600w.avif";
+import window from "../../../assets/images/tc-20-600w.avif";
+import door from "../../../assets/images/tc-7-600w.avif";
+const HotServiceCard = () => {
   const serviceData = [
     {
       id: 1,
-      serviceTitle: "Plomberie",
-      icon: "https://www.travaux.com/static/svg-icons/plumbing.svg",
+      serviceTitle: "Peinture",
+      icon:"https://www.travaux.com/static/svg-icons/painting.svg",
       description:
         "Vous voulez en savoir plus sur les travaux de plomberie ? Grâce à nos articles, nous pouvons vous donner",
       linkTitle: "Toutes les informations sur plomberie",
@@ -28,8 +28,8 @@ const ServiceCard = () => {
     },
     {
       id: 2,
-      serviceTitle: "Fenêtre et porte",
-      icon: "https://www.travaux.com/static/svg-icons/windows-doors.svg",
+      serviceTitle: "Plâtre",
+      icon: "https://www.travaux.com/static/svg-icons/plastering.svg",
       description:
         "Vous voulez en savoir plus sur les travaux de plomberie ? Grâce à nos articles, nous pouvons vous donner",
       linkTitle: "Toutes les informations sur plomberie",
@@ -47,8 +47,8 @@ const ServiceCard = () => {
     },
     {
       id: 3,
-      serviceTitle: "Couverture-Toiture",
-      icon: "https://www.travaux.com/static/svg-icons/roofing.svg",
+      serviceTitle: "Sols et carrelage",
+      icon: "https://www.travaux.com/static/svg-icons/flooring-tiles.svg",
       description:
         "Vous voulez en savoir plus sur les travaux de plomberie ? Grâce à nos articles, nous pouvons vous donner",
       linkTitle: "Toutes les informations sur plomberie",
@@ -67,8 +67,8 @@ const ServiceCard = () => {
     
   ];
   return (
-    <div className="container my-5">
-      <h1>Soyez prêt pour l'hiver</h1>
+    <div className="container py-5 ">
+      <h1>Toujours très demandé</h1>
       <div className="service_card row">
         {serviceData.map(({img,serviceTitle,icon,description,linkTitle,path,subDescription,id}) => (
           <div className="col-md-4 py-3 " key={id}>
@@ -102,4 +102,4 @@ const ServiceCard = () => {
   );
 };
 
-export default ServiceCard;
+export default HotServiceCard;

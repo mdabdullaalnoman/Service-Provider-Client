@@ -1,0 +1,10 @@
+.job_section{
+    .header{
+        .linkTab{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -25,7 +25,7 @@ const Craftsman = () => {
       <h2 className=" ms-2 py-2" style={{frontWidth:'700'}}>Comment trouver le bon artisan ?</h2>
       <div className="craftsman_section row">
         {craftsman.map((cr) => (
-          <div className="col-md-4 p-4">
+          <div className="col-md-4 p-4" key={cr.id}>
             <div className="craftsman_container d-flex justify-content-center  gap-3">
               <div className="number">
                 <h1 style={{color:'#e5cb4e'}}>{cr.id}</h1>
